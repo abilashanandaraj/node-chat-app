@@ -2,11 +2,6 @@
 
         socket.on('connect', function() {
             console.log('Connected to Server');
-
-            socket.emit('createMessage', {
-                from: 'Abilash',
-                text: 'Yup, that works for me.'
-            });
         });
 
         socket.on('disconnect', function() {
